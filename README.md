@@ -1,6 +1,8 @@
 # learning-graphql
 
-## Returns * name * and * address city * from users
+1. Returns **name** and **address city** from users
+
+command
 ```
 query {
   users {
@@ -8,6 +10,26 @@ query {
     address {
      city
     }
+  }
+}
+```
+outcome
+```
+{
+  "data": {
+    "users": [
+      {
+        "name": "William",
+        "address": [
+          {
+            "city": "São José dos Campos"
+          },
+          {
+            "city": "São Paulo"
+          }
+        ]
+      }
+    ]
   }
 }
 ```
