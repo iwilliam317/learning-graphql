@@ -1,8 +1,17 @@
 type User {
     id: ID!,
     name: String!,
-    email: String!
+    email: String!,
+    address: [Address]
 }
+
+type Address {
+    nickname: String!,
+    street: String!,
+    zip: String!,
+    city: String!
+}
+
 type Query {
     users: [User!]!
     user(id: ID!): User
