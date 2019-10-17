@@ -4,6 +4,6 @@ const users = [
 module.exports = {
     Query: {
         users: () => users,
-        user: (_, {id}) => users[0]
+        user: (_, {id}) => users[0],
     }
 }
