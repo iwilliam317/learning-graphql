@@ -2,8 +2,9 @@
 
 1. Returns **name** and **address city** from users
 
-command
+
 ```
+# Command
 query {
   users {
     name,
@@ -13,8 +14,9 @@ query {
   }
 }
 ```
-outcome
+
 ```
+# Outcome
 {
   "data": {
     "users": [
